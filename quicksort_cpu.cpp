@@ -21,15 +21,15 @@ int partition (int A[], int start_idx, int end_idx)
     int pivotIdx = end_idx;
     
     // partitionIdx - points to the point between the left sub-array 
-    // that is <= pivot and the right array that is >= pivot. The 
+    // that is <= pivot and the right array that is > pivot. The 
     // partitionIdx actually points to the first entry in the right 
     // sub-array. This makes is easy to swap this entry with the starting 
     // pivotIdx
     int partitionIdx = start_idx;
     
-    // moving pointer that scans through the array. This pointer separates 
+    // Moving index that scans through the array. This index separates 
     // the processed array [<= pivot and > pivot] from the to-be processed 
-    // part of the array. since pivot is the last elemnt, need to scan only 
+    // part of the array. Since pivot is the last element, need to scan only 
     // up to end_index -1
     // Note that partitionIdx <= i always (i leads the partition idex)
     for (int i = start_idx; i<end_idx; i++) {

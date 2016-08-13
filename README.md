@@ -1,2 +1,2 @@
-# cude-quicksort
+# cuda-quicksort
 Accelerate quick sort using CUDA
